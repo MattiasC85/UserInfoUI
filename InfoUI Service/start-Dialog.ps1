@@ -443,7 +443,7 @@ Write-host "Current Process running as System: " $CurId.IsSystem
 $ConsoleSessionID=[DesktopLauncher.WinApi]::WTSGetActiveConsoleSessionId()
 Write-Host "Console SessionID: " $ConsoleSessionID
 
-$Provmode=$false #testar
+#$Provmode=$false #testar
 $Processes=(Get-Process *).ProcessName
 if ($Provmode -ne "false")
 {
